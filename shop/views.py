@@ -32,7 +32,6 @@ class ShopView(ListView):
             qs = qs.filter(colors=color)
 
         brand = self.request.GET.get('brand')
-
         if brand:
             qs = qs.filter(brand_id=brand)
 

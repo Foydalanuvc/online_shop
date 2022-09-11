@@ -86,7 +86,7 @@
                         <div class="shop__sidebar__color">
                             {% for color in colors %}
                                 <label style="background-color: {{ color.code }}" for="{{ color.code }}">
-                                    <input onclick="addUrlParameter('color', {{ color.pk }})" type="radio" id="{{ color.code }}">
+                                    <input onclick="addUrlParameter('color', {{ color.pk}})" type="radio" id="{{ color.code }}">
                                 </label>
                             {% endfor %}
                         </div>
